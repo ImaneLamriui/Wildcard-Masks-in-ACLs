@@ -19,7 +19,7 @@ We want to apply a __wildcard__ for a range that goes from 172.16.8.0 to 172.16.
 We'll need a block size of 8 because we have 8 subnets.
 The network number will be 172.16.8.0 and the wildcard will be __0.0.7.247__-.
 
-So, is the first wildcard __0.0.7.255__?
+So, is __the first__ wildcard __0.0.7.255__?
 
 No, actually, the first wildcard in this case would be __0.0.7.247__.
 
