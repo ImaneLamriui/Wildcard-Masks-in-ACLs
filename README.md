@@ -19,11 +19,7 @@ We want to apply a __wildcard__ for a range that goes from 172.16.8.0 to 172.16.
 We'll need a block size of 8 because we have 8 subnets.
 The network number will be 172.16.8.0 and the wildcard will be __0.0.7.247__-.
 
-So, is __the first__ wildcard __0.0.7.255__?
-
-No, actually, the first wildcard in this case would be __0.0.7.247__.
-
-Here's the breakdown:
+The first wildcard in this case would be __0.0.7.247__.
 
 The first octet of the IP address range goes from 172 to 172, which means it doesn't change. Therefore, the wildcard for the first octet would be 0.
 The second octet of the IP address range goes from 16 to 16, which also means it doesn't change. The wildcard for the second octet would also be 0.
@@ -35,6 +31,5 @@ For the third octet, the block size is 8 (since there are 8 subnets) and the hig
 
 In binary, 8 is represented as 00001000. Wildcards are represented as the one's complement of the binary value. Therefore, to get the correct wildcard value, we flip all the bits, which gives us 11110111. In decimal, this is equal to 247.
 
-So, the correct wildcard for the third octet would be 247. Therefore, the complete wildcard would be __0.0.7.247__.
 
 The calculation for the last wildcard is done by subtracting the lowest value of the range (8) minus 1 from the maximum possible value for the third octet (15), resulting in 7. Since the maximum value an octet of an IP address can have is 255, the last wildcard would be __255 - 7 = 248__.
