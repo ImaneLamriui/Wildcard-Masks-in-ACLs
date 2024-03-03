@@ -13,7 +13,7 @@ __Extended Access Control Lists (Extended ACLs)__: In contrast, Extended ACLs of
 
 https://community.cisco.com/t5/networking-knowledge-base/cisco-access-control-lists-acl/ta-p/4182349
 
-__Example__
+###### __Example__
 
 We want to apply a __wildcard__ for a range that goes from 172.16.8.0 to 172.16.15.0.
 We'll need a block size of 8 because we have 8 subnets.
